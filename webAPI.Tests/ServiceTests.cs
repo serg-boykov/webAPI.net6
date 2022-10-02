@@ -80,10 +80,10 @@ namespace webAPI.Tests
 
 
         [Test]
-        [TestCase(1, 1, "Mersed", "Mersedes", true)]
-        [TestCase(1, 1, "Mersedes", "Mersedes", false)]
-        [TestCase(0, 1, "Mersed", "Mersedes", false)]
-        [TestCase(0, 1, "Mersedes", "Mersedes", false)]
+        [TestCase(1, 1, "Merced", "Mercedes", true)]
+        [TestCase(1, 1, "Mercedes", "Mercedes", false)]
+        [TestCase(0, 1, "Merced", "Mercedes", false)]
+        [TestCase(0, 1, "Mercedes", "Mercedes", false)]
         public async Task Check_UpdateAsync(int newId, int expectedId, string newName, string expectedName, bool expectedResult)
         {
             // Arrange
